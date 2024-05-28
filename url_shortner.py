@@ -1,5 +1,8 @@
 import pyshorteners
+## ENTERING THE WEBSITE URL WHOSE URL IS TO BE SHORTENED
 website_url = input("PLEASE ENTER THE WEBSITE URL HERE : ")
+## INITIALIZING
 s = pyshorteners.Shortener()
+## TINYURL IS SUPPORTED BY PYSHORTERNERS AND IT DOES NOT REQUIRE API KEY...BUT OTHERS SUCH AS BITLY REQUIRES API KEY TO SHORTEN THE LINK
 short_url = s.tinyurl.short(website_url)
 print(short_url)
